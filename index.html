@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chọn Chủ Đề</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Chọn Chủ Đề</h1>
+
+    <div class="topic-container" onclick="selectTopic(this)">
+      <div class="topic-heading">Chủ đề 1: OOP</div>
+      <div class="topic-details">
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 1: Chủ đề OOP (Lớp và đối tượng)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa một lớp Animal với các thuộc tính Name và Age. (1
+            điểm)<br />
+            b) Tạo phương thức DisplayInfo() để hiển thị thông tin của đối
+            tượng. (1 điểm)<br />
+            c) Tạo lớp con Dog kế thừa từ Animal, thêm thuộc tính Breed. (1.5
+            điểm)<br />
+            d) Tạo đối tượng từ lớp Dog và gọi phương thức DisplayInfo(). (1.5
+            điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">Câu 2: Chủ đề OOP (Tính đa hình)</div>
+          <div class="question-details">
+            a) Định nghĩa lớp Shape với phương thức Draw() không có nội dung. (1
+            điểm)<br />
+            b) Tạo lớp Circle kế thừa Shape, ghi đè phương thức Draw() để vẽ
+            hình tròn. (1 điểm)<br />
+            c) Tạo lớp Rectangle kế thừa Shape, ghi đè phương thức Draw() để vẽ
+            hình chữ nhật. (1.5 điểm)<br />
+            d) Sử dụng đa hình để tạo danh sách các đối tượng Shape và gọi
+            phương thức Draw(). (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 3: Chủ đề OOP (Encapsulation - Tính đóng gói)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Account với thuộc tính balance (được encapsulate).
+            (1 điểm)<br />
+            b) Tạo các phương thức Deposit và Withdraw để cập nhật giá trị
+            balance. (1 điểm)<br />
+            c) Đảm bảo tính bảo mật cho thuộc tính balance khi không cho phép
+            trực tiếp thay đổi từ bên ngoài. (1.5 điểm)<br />
+            d) Tạo đối tượng Account và kiểm tra các phương thức Deposit và
+            Withdraw. (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">Câu 4: Chủ đề OOP (Tính kế thừa)</div>
+          <div class="question-details">
+            a) Định nghĩa lớp Employee với thuộc tính Name và Position. (1
+            điểm)<br />
+            b) Tạo lớp Manager kế thừa từ Employee, thêm thuộc tính Department.
+            (1 điểm)<br />
+            c) Tạo lớp Developer kế thừa từ Employee, thêm thuộc tính
+            ProgrammingLanguage. (1.5 điểm)<br />
+            d) Tạo các đối tượng Manager và Developer, hiển thị thông tin của
+            từng đối tượng. (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">Câu 5: Chủ đề OOP (Interface)</div>
+          <div class="question-details">
+            a) Định nghĩa một interface IMovable với phương thức Move(). <br />
+            b) Tạo lớp Car và Bike triển khai interface IMovable.<br />
+            c) Ghi đè phương thức Move() cho từng lớp.<br />
+            d) Tạo danh sách các đối tượng IMovable và gọi phương thức Move().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">Câu 6: Chủ đề OOP (Abstraction)</div>
+          <div class="question-details">
+            a) Định nghĩa một lớp trừu tượng Appliance với phương thức TurnOn()
+            và TurnOff(). (1 điểm)<br />
+            b) Tạo lớp WashingMachine kế thừa từ Appliance và triển khai các
+            phương thức. (1 điểm)<br />
+            c) Tạo lớp Refrigerator kế thừa từ Appliance và triển khai các
+            phương thức. (1.5 điểm)<br />
+            d) Tạo danh sách các đối tượng Appliance và gọi các phương thức
+            TurnOn() và TurnOff(). (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 7: Chủ đề OOP (Constructor Overloading - Nạp chồng constructor)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Person với thuộc tính Name và Age. (1 điểm)<br />
+            b) Tạo constructor mặc định không tham số. (1 điểm)<br />
+            c) Tạo constructor có tham số để khởi tạo Name và Age. (1.5 điểm)<br />
+            d) Tạo đối tượng Person với cả hai cách khởi tạo và hiển thị thông
+            tin. (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 8: Chủ đề OOP (Abstract Class - Lớp trừu tượng)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp trừu tượng Vehicle với phương thức Start() và
+            Stop(). (1 điểm)<br />
+            b) Tạo lớp Car kế thừa từ Vehicle và triển khai các phương thức. (1
+            điểm)<br />
+            c) Tạo lớp Motorbike kế thừa từ Vehicle và triển khai các phương
+            thức. (1.5 điểm)<br />
+            d) Tạo danh sách các đối tượng Vehicle và gọi phương thức Start() và
+            Stop(). (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 9: Chủ đề OOP (Inheritance - Kế thừa)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Animal với phương thức MakeSound(). (1 điểm)<br />
+            b) Tạo lớp Dog kế thừa Animal và ghi đè phương thức MakeSound(). (1
+            điểm)<br />
+            c) Tạo lớp Cat kế thừa Animal và ghi đè phương thức MakeSound().
+            (1.5 điểm)<br />
+            d) Tạo danh sách các đối tượng Animal và gọi phương thức
+            MakeSound(). (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 10: Chủ đề OOP (Static Members - Thành viên tĩnh)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Counter với thuộc tính tĩnh count.<br />
+            b) Tạo phương thức tĩnh Increment() để tăng giá trị count.<br />
+            c) Tạo các đối tượng Counter và gọi phương thức Increment().<br />
+            d) Kiểm tra giá trị của thuộc tính tĩnh count.
+          </div>
+        </div>
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 11: Chủ đề OOP (Interface Implementation)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa interface IDrawable với phương thức Draw(). (1
+            điểm)<br />
+            b) Tạo lớp Shape và Circle triển khai interface IDrawable. (1
+            điểm)<br />
+            c) Ghi đè phương thức Draw() trong lớp Circle. (1.5 điểm)<br />
+            d) Tạo đối tượng Circle và gọi phương thức Draw(). (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 12: Chủ đề OOP (Polymorphism - Tính đa hình)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Bird với phương thức Fly(). (1 điểm)<br />
+            b) Tạo lớp Eagle kế thừa Bird và ghi đè phương thức Fly(). (1
+            điểm)<br />
+            c) Tạo lớp Penguin kế thừa Bird và ghi đè phương thức Fly() (không
+            bay được). (1.5 điểm)<br />
+            d) Tạo danh sách các đối tượng Bird và gọi phương thức Fly(). (1.5
+            điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 13: Chủ đề OOP (Constructor Inheritance - Kế thừa constructor)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Person với constructor nhận tham số name. (1
+            điểm)<br />
+            b) Tạo lớp Student kế thừa từ Person và sử dụng constructor của lớp
+            cha. (1 điểm)<br />
+            c) Tạo lớp Teacher kế thừa từ Person và sử dụng constructor của lớp
+            cha. (1.5 điểm)<br />
+            d) Tạo các đối tượng Student và Teacher, hiển thị thông tin. (1.5
+            điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 14: Chủ đề OOP (Virtual Methods - Phương thức ảo)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp BaseClass với phương thức ảo Display(). (1
+            điểm)<br />
+            b) Tạo lớp DerivedClass kế thừa BaseClass và ghi đè phương thức
+            Display(). (1 điểm)<br />
+            c) Tạo đối tượng của DerivedClass và gọi phương thức Display(). (1.5
+            điểm)<br />
+            d) Minh họa sự khác biệt khi gọi phương thức thông qua lớp cha và
+            lớp con. (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 15: Chủ đề OOP (Exception Handling - Xử lý ngoại lệ)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa phương thức Divide(int a, int b) để thực hiện phép
+            chia. (1 điểm)<br />
+            b) Xử lý ngoại lệ DivideByZeroException khi b = 0. (1 điểm)<br />
+            c) Sử dụng try-catch-finally để đảm bảo tài nguyên được giải phóng.
+            (1.5 điểm)<br />
+            d) Gọi phương thức Divide() và kiểm tra xử lý ngoại lệ. (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 16: Chủ đề OOP (Interface with Multiple Inheritance)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa interface IDriveable với phương thức Drive(). (1
+            điểm)<br />
+            b) Định nghĩa interface IFlyable với phương thức Fly(). (1 điểm)<br />
+            c) Tạo lớp CarPlane triển khai cả hai interface IDriveable và
+            IFlyable. (1.5 điểm)<br />
+            d) Tạo đối tượng CarPlane và gọi các phương thức Drive() và Fly().
+            (1.5 điểm)
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 17: Chủ đề OOP (Object Composition)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Engine với phương thức StartEngine().<br />
+            b) Định nghĩa lớp Car với thuộc tính Engine.<br />
+            c) Trong lớp Car, gọi phương thức StartEngine() từ đối tượng
+            Engine.<br />
+            d) Tạo đối tượng Car và kiểm tra phương thức StartEngine().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 18: Chủ đề OOP (Polymorphism through Interfaces)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa interface IDrive với phương thức Drive().<br />
+            b) Tạo lớp Car và Truck triển khai IDrive.<br />
+            c) Tạo danh sách kiểu IDrive chứa các đối tượng Car và Truck.<br />
+            d) Gọi phương thức Drive() trên từng đối tượng trong danh sách.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 19: Chủ đề OOP (Abstract vs Concrete Methods)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp trừu tượng Appliance với phương thức trừu tượng
+            TurnOn().<br />
+            b) Tạo lớp Fan kế thừa từ Appliance và triển khai phương thức
+            TurnOn().<br />
+            c) Tạo lớp AirConditioner kế thừa từ Appliance và triển khai phương
+            thức TurnOn().<br />
+            d) Tạo đối tượng của Fan và AirConditioner, gọi phương thức
+            TurnOn().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 20: Chủ đề OOP (Inheritance and Composition)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Engine với phương thức Start().<br />
+            b) Tạo lớp Vehicle có thuộc tính Engine.<br />
+            c) Tạo lớp Car kế thừa Vehicle và gọi phương thức Start() từ
+            Engine.<br />
+            d) Tạo đối tượng Car và kiểm tra phương thức Start().
+          </div>
+        </div>
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 21: Chủ đề OOP (Interface Inheritance)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa interface IMovable với phương thức Move().<br />
+            b) Định nghĩa interface IFlyable kế thừa từ IMovable và thêm phương
+            thức Fly().<br />
+            c) Tạo lớp Helicopter triển khai interface IFlyable.<br />
+            d) Tạo đối tượng Helicopter và kiểm tra các phương thức Move() và
+            Fly().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 22: Chủ đề OOP (Encapsulation - Tính đóng gói)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp BankAccount với thuộc tính balance.<br />
+            b) Tạo phương thức Deposit và Withdraw để thay đổi giá trị của
+            balance.<br />
+            c) Đảm bảo balance không thể bị chỉnh sửa trực tiếp từ bên ngoài.<br />
+            d) Tạo đối tượng BankAccount và thực hiện các phương thức để kiểm
+            tra tính bảo mật.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 23: Chủ đề OOP (Constructor Chaining)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Person với constructor nhận một tham số name.<br />
+            b) Tạo constructor thứ hai nhận cả name và age, sử dụng constructor
+            chaining.<br />
+            c) Gọi cả hai constructor để tạo đối tượng Person.<br />
+            d) Hiển thị thông tin của đối tượng Person đã được tạo.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 24: Chủ đề OOP (Abstract Class Implementation)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp trừu tượng Instrument với phương thức Play().<br />
+            b) Tạo lớp Guitar kế thừa từ Instrument và triển khai phương thức
+            Play().<br />
+            c) Tạo lớp Piano kế thừa từ Instrument và triển khai phương thức
+            Play().<br />
+            d) Tạo danh sách các đối tượng Instrument và gọi phương thức Play().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 25: Chủ đề OOP (Lớp và Đối tượng)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa một lớp Car với thuộc tính Make và Model.<br />
+            b) Tạo phương thức DisplayInfo() để hiển thị thông tin xe.<br />
+            c) Tạo đối tượng từ lớp Car và gán giá trị cho các thuộc tính.<br />
+            d) Gọi phương thức DisplayInfo().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">Câu 26: Chủ đề OOP (Tính kế thừa)</div>
+          <div class="question-details">
+            a) Định nghĩa lớp Animal với thuộc tính Name.<br />
+            b) Tạo lớp Dog kế thừa từ Animal.<br />
+            c) Thêm thuộc tính Breed cho lớp Dog.<br />
+            d) Tạo đối tượng Dog và hiển thị thông tin.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 27: Chủ đề OOP (Thuộc tính - Properties)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Person với thuộc tính Name và Age.<br />
+            b) Sử dụng thuộc tính tự động (auto-implemented property).<br />
+            c) Tạo đối tượng Person và gán giá trị cho các thuộc tính.<br />
+            d) Hiển thị thông tin từ đối tượng Person.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">Câu 28: Chủ đề OOP (Constructor)</div>
+          <div class="question-details">
+            a) Định nghĩa lớp Student với thuộc tính Name.<br />
+            b) Tạo constructor để khởi tạo giá trị cho thuộc tính Name.<br />
+            c) Tạo đối tượng Student và truyền giá trị qua constructor.<br />
+            d) Hiển thị thông tin sinh viên.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 29: Chủ đề OOP (Tính kế thừa và đa hình)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Shape với phương thức Draw().<br />
+            b) Tạo lớp Circle và Square kế thừa từ Shape.<br />
+            c) Ghi đè phương thức Draw() trong hai lớp.<br />
+            d) Tạo đối tượng từ các lớp con và gọi phương thức Draw().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 30: Chủ đề OOP (Encapsulation - Tính đóng gói)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Account với thuộc tính Balance.<br />
+            b) Sử dụng tính đóng gói để bảo vệ thuộc tính Balance.<br />
+            c) Tạo phương thức Deposit() và Withdraw() để thay đổi Balance.<br />
+            d) Tạo đối tượng Account và kiểm tra tính đóng gói.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 31: Chủ đề OOP (Interface đơn giản)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa interface IDriveable với phương thức Drive().<br />
+            b) Tạo lớp Car và Bike triển khai interface IDriveable.<br />
+            c) Ghi đè phương thức Drive() trong mỗi lớp.<br />
+            d) Tạo đối tượng từ hai lớp và gọi phương thức Drive().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 32: Chủ đề OOP (Tạo lớp và phương thức)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Product với thuộc tính Name và Price.<br />
+            b) Tạo phương thức Display() để hiển thị thông tin sản phẩm.<br />
+            c) Tạo đối tượng Product và gán giá trị.<br />
+            d) Gọi phương thức Display().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 33: Chủ đề OOP (Nạp chồng phương thức)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Calculator với phương thức Add(int a, int b).<br />
+            b) Nạp chồng phương thức Add(double a, double b) cho kiểu dữ liệu
+            khác.<br />
+            c) Gọi cả hai phương thức Add() với giá trị số nguyên và số thực.<br />
+            d) Hiển thị kết quả của từng phép tính.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 34: Chủ đề OOP (Constructor mặc định)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Book với thuộc tính Title và Author.<br />
+            b) Tạo constructor mặc định khởi tạo các giá trị cho thuộc tính.<br />
+            c) Tạo đối tượng Book và hiển thị thông tin.<br />
+            d) Hiển thị kết quả.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 35: Chủ đề OOP (Interface cơ bản)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa interface IPlayable với phương thức Play().<br />
+            b) Tạo lớp Game và Music triển khai interface IPlayable.<br />
+            c) Ghi đè phương thức Play() trong từng lớp.<br />
+            d) Tạo đối tượng từ hai lớp và gọi phương thức Play().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 36: Chủ đề OOP (Thuộc tính và phương thức cơ bản)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Laptop với thuộc tính Brand và Price.<br />
+            b) Tạo phương thức ShowInfo() để hiển thị thông tin laptop.<br />
+            c) Tạo đối tượng Laptop và gán giá trị cho các thuộc tính.<br />
+            d) Gọi phương thức ShowInfo() và hiển thị thông tin.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 37: Chủ đề OOP (Interface đơn giản)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa interface IRunnable với phương thức Run().<br />
+            b) Tạo lớp Animal và Car triển khai interface IRunnable.<br />
+            c) Ghi đè phương thức Run() trong hai lớp.<br />
+            d) Tạo đối tượng từ hai lớp và gọi phương thức Run().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 38: Chủ đề OOP (Interface đơn giản)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa interface IDriveable với phương thức Drive().<br />
+            b) Tạo lớp Car và Bike triển khai interface IDriveable.<br />
+            c) Ghi đè phương thức Drive() trong mỗi lớp.<br />
+            d) Tạo đối tượng từ hai lớp và gọi phương thức Drive().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 39: Chủ đề OOP (Tạo lớp và phương thức)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Product với thuộc tính Name và Price.<br />
+            b) Tạo phương thức Display() để hiển thị thông tin sản phẩm.<br />
+            c) Tạo đối tượng Product và gán giá trị.<br />
+            d) Gọi phương thức Display().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 40: Chủ đề OOP (Nạp chồng phương thức)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Calculator với phương thức Add(int a, int b).<br />
+            b) Nạp chồng phương thức Add(double a, double b) cho kiểu dữ liệu
+            khác.<br />
+            c) Gọi cả hai phương thức Add() với giá trị số nguyên và số thực.<br />
+            d) Hiển thị kết quả của từng phép tính.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 41: Chủ đề OOP (Constructor mặc định)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Book với thuộc tính Title và Author.<br />
+            b) Tạo constructor mặc định khởi tạo các giá trị cho thuộc tính.<br />
+            c) Tạo đối tượng Book và hiển thị thông tin.<br />
+            d) Hiển thị kết quả trong phương thức Main().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">Câu 42: Chủ đề OOP (Tính đa hình)</div>
+          <div class="question-details">
+            a) Định nghĩa lớp Employee với phương thức Work().<br />
+            b) Tạo lớp Manager và Developer kế thừa từ Employee.<br />
+            c) Ghi đè phương thức Work() trong hai lớp con.<br />
+            d) Tạo đối tượng của Manager và Developer, gọi phương thức Work().
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 43: Chủ đề OOP (Kế thừa cơ bản)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa lớp Animal với thuộc tính Name.<br />
+            b) Tạo lớp Cat kế thừa từ Animal.<br />
+            c) Thêm thuộc tính Color cho lớp Cat.<br />
+            d) Tạo đối tượng từ lớp Cat và hiển thị thông tin.
+          </div>
+        </div>
+
+        <div class="question-container" onclick="selectQuestion(this)">
+          <div class="question-heading">
+            Câu 44: Chủ đề OOP (Interface cơ bản)
+          </div>
+          <div class="question-details">
+            a) Định nghĩa interface IPlayable với phương thức Play().<br />
+            b) Tạo lớp Game và Music triển khai interface IPlayable.<br />
+            c) Ghi đè phương thức Play() trong từng lớp.<br />
+            d) Tạo đối tượng từ hai lớp và gọi phương thức Play().
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-container" onclick="selectTopic(this)">
+      <div class="topic-heading">Chủ đề 2: OOP nâng cao</div>
+      <div class="topic-details">
+        <!-- Nội dung sẽ được thêm sau -->
+        <p>Đang chờ nội dung...</p>
+      </div>
+    </div>
+
+    <div class="topic-container" onclick="selectTopic(this)">
+      <div class="topic-heading">Chủ đề 3: Winform</div>
+      <div class="topic-details">
+        <!-- Nội dung sẽ được thêm sau -->
+        <p>Đang chờ nội dung...</p>
+      </div>
+    </div>
+
+    <script>
+      // Hàm chọn chủ đề
+      function selectTopic(element) {
+        document.querySelectorAll(".topic-container").forEach(function (topic) {
+          topic.classList.remove("selected");
+          topic.classList.remove("expanded");
+        });
+        element.classList.add("selected");
+        element.classList.toggle("expanded");
+      }
+
+      // Hàm chọn câu hỏi
+      function selectQuestion(element) {
+        document
+          .querySelectorAll(".question-container")
+          .forEach(function (question) {
+            question.classList.remove("selected");
+            question.classList.remove("expanded");
+          });
+        element.classList.add("selected");
+        element.classList.toggle("expanded");
+      }
+    </script>
+  </body>
+</html>
